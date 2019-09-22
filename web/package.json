@@ -1,0 +1,39 @@
+{
+  "name": "NodeJS2019Interview",
+  "author": "Miguel Lemos <miguelemosreverte@gmail.com> (https://github.com/miguelemosreverte)",
+  "version": "1.0.0",
+  "description": "A NodeJS interview",
+  "scripts": {
+    "build": "npx babel src --out-dir lib",
+    "debug-kernel": "nodemon -e js,ts --watch src --exec \"clear && npm run build && npm run tests\"",
+    "api": "node lib/main/index.js",
+    "debug-api": "nodemon -e js,ts --watch src --exec \"clear && npm run build && npm run tests && npm run api\"",
+    "babel-version": "babel --version",
+    "preinstall": "sudo npm i -g nodemon npx",
+    "tests": "mocha  --recursive 'src/tests' --compilers js:babel-register"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-babili": "0.0.4",
+    "babel-preset-env": "^1.7.0",
+    "babili": "0.0.6",
+    "chai": "^4.2.0",
+    "mocha": "^3.0.2",
+    "mochawesome": "^1.5.2",
+    "npx": "^10.2.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node6",
+      "stage-0",
+      "babili"
+    ]
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "mongodb": "^3.1.13",
+    "ramda": "^0.26.1"
+  }
+}
