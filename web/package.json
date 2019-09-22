@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npx babel src --out-dir lib",
     "debug-kernel": "nodemon -e js,ts --watch src --exec \"clear && npm run build && npm run tests\"",
-    "api": "node lib/main/index.js",
+    "api": "npm run build && node lib/main/index.js",
     "debug-api": "nodemon -e js,ts --watch src --exec \"clear && npm run build && npm run tests && npm run api\"",
     "babel-version": "babel --version",
     "preinstall": "sudo npm i -g nodemon npx",
@@ -31,9 +31,14 @@
     ]
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
+    "koa-jwt": "^3.6.0",
+    "koa-router": "^7.4.0",
     "mongodb": "^3.1.13",
+    "mongoose": "^5.7.1",
     "ramda": "^0.26.1"
   }
 }
