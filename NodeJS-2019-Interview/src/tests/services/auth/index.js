@@ -13,6 +13,9 @@ const mockRepository = json => ({
   delete: key => { json[key] = undefined }
 })
 
+const tests = {
+
+}
 describe('validate mockRepository', () => {
   it(`isLoggedIn should return true for 'user' `, () => {
 

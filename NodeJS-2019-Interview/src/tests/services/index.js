@@ -1,6 +1,6 @@
 'use strict'
 
-import {login, logout, isLoggedIn}  from '../../../main/services/auth'
+import {login, logout, isLoggedIn}  from '../../..main/services/auth'
 import { expect }  from 'chai'
 
 const mockDatabase = {
@@ -12,6 +12,7 @@ const mockRepository = json => ({
   update: key => value => { json[key] = value },
   delete: key => { json[key] = undefined }
 })
+
 
 describe('validate mockRepository', () => {
   it(`isLoggedIn should return true for 'user' `, () => {

@@ -23,7 +23,9 @@ Battle plan:
 - 5 min of frontend setup ✔
 - 20 min of modelling the solution on the backend using tests and an isolated,
 pure, logic kernel
-- 10 min of setting up a health api using KoaJS
+❌ -- took 20 min longer, was out of practice
+❌ -- _and then it took 20 min more!_
+- 10 min of setting up a health api using KoaJS ✔
 - 10 min of setting up React Redux sagas to hit the health api
 - 10 min of setting up a basic auth with JWT token (this i have done many times before)
 - 10 min of setting of a docker-compose with mongodb (this i have done many times before)
