@@ -19,8 +19,8 @@ I will propose a battle plan and go on about placing green ticks when completed 
 expected time, and red marks when surpassed time expectations-
 
 Battle plan:
-- 5 min of README
-- 5 min of frontend setup
+- 5 min of README ✔
+- 5 min of frontend setup ✔
 - 20 min of modelling the solution on the backend using tests and an isolated,
 pure, logic kernel
 - 10 min of setting up a health api using KoaJS
